@@ -10,7 +10,7 @@ class Solution:
 
             if(currenttank < 0):
                 currenttank = 0
-                startidx += 1
+                startidx = i + 1
         
         if totaltank < 0:
             return -1
