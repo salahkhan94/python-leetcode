@@ -19,4 +19,4 @@ class Solution:
             s_map[words[i]] = pattern[i]
             p_map[pattern[i]] = words[i]
         
-        return True
+        return True 
