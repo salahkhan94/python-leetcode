@@ -1,12 +1,11 @@
 import numpy as np
 
-# Example matrix
+
 matrix = np.array([[3, 4, 5, 7],
                    [2, 3, 8, 4],
                    [3, 7, 3, 5],
                    [5, 5, 7, 1]])
 
-# Calculate the rank
 rank = np.linalg.matrix_rank(matrix)
 
 print(f"The rank of the matrix is: {rank}")
