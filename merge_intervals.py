@@ -37,4 +37,22 @@ class Solution:
         
         return merged
 
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        intervals.sort(key=lambda x: x[0])
+        merged = []
+        start = intervals[0][0]
+        end = intervals[0][1]
+
+        for interval in intervals:
+            cur_start = interval[0]
+            cur_end = interval[1]
+            if (cur_start > end) :
+                merged.append([start, end])
+                start = cur_start
+            end = max(end, cur_end)
+
+        
+        merged.append([start, end])
+        return merged
 
